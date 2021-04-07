@@ -14,6 +14,7 @@
     </bean>
     <bean id = "MusicPlayer" class="MusicPlayer">
     <property name="music" ref="musicBean1"> </property>
+        <constructor-arg ref="musicBean2"/>
         <property name="list">
         <list>
             <ref bean="musicBean1"/>
